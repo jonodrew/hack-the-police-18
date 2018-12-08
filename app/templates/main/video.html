@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<h2 class="govuk-heading-l">Submitting video evidence to the police</h2>
+
+<p class="govuk-body">
+    Thank you for agreeing to submit your video. If you can edit your video down to the most valuable parts, please do so.
+    However, if you don't have the software or don't feel comfortable, please submit the entire video.
+    Once you've done this you'll receive an email confirmation with a code that refers specifically to your video, if you gave us an email,
+    or a text if you gave us your phone number.
+</p>
+
+<form action="" method="post">
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="file-upload-1">
+        Upload a file
+      </label>
+      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+    </div>
+
+    <button type="submit" class="govuk-button">
+      Save and continue
+    </button>
+</form>
+
+{% endblock %}
