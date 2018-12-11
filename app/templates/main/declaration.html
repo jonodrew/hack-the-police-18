@@ -1,0 +1,35 @@
+
+
+{% block content %}
+
+    <fieldset class="govuk-fieldset" aria-describedby="declaration-agree">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            Declaration
+          </h1>
+        </legend>
+        <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Warning</span>
+                You can be prosecuted or sent to jail if you have submitted evidence that you know has been changed or altered.
+            </strong>
+        </div>
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="witness-agree-evidence" name="witness-agree-evidence" type="checkbox" value="agree-evidence">
+            <label class="govuk-label govuk-checkboxes__label" for="witness-agree-evidence">
+              To the best of my knowledge and belief this evidence has not been changed or altered.
+            </label>
+          </div>
+            <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="witness-agree-details" name="witness-agree-details" type="checkbox" value="agree-evidence">
+            <label class="govuk-label govuk-checkboxes__label" for="witness-agree-details">
+              To the best of my knowledge and belief the personal details I have given you are correct.
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    <br>
+
+{% endblock %}
