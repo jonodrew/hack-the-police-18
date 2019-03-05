@@ -1,5 +1,3 @@
-
-
 {% block content %}
 
     <fieldset class="govuk-fieldset" aria-describedby="declaration-agree">
@@ -16,16 +14,22 @@
             </strong>
         </div>
         <div class="govuk-checkboxes">
-          <div class="govuk-checkboxes__item">
+            <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="witness-agree-evidence" name="witness-agree-evidence" type="checkbox" value="agree-evidence">
-            <label class="govuk-label govuk-checkboxes__label" for="witness-agree-evidence">
-              To the best of my knowledge and belief this evidence has not been changed or altered.
-            </label>
+                <label class="govuk-label govuk-checkboxes__label" for="witness-agree-evidence">
+                  To the best of my knowledge and belief this evidence has not been changed or altered.
+                </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="witness-agree-details" name="witness-agree-details" type="checkbox" value="agree-evidence">
+                <label class="govuk-label govuk-checkboxes__label" for="witness-agree-details">
+                  To the best of my knowledge and belief the personal details I have given you are correct.
+                </label>
           </div>
             <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="witness-agree-details" name="witness-agree-details" type="checkbox" value="agree-evidence">
-            <label class="govuk-label govuk-checkboxes__label" for="witness-agree-details">
-              To the best of my knowledge and belief the personal details I have given you are correct.
+            <input class="govuk-checkboxes__input" id="witness-agree-disseminate" name="witness-agree-disseminate" type="checkbox" value="agree-disseminate">
+            <label class="govuk-label govuk-checkboxes__label" for="witness-agree-disseminate">
+              I am aware this footage could be circulated to the media to identify suspects
             </label>
           </div>
         </div>

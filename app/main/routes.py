@@ -16,7 +16,7 @@ def details():
     if request.method == 'POST':
         session['details'] = request.form
         print(session['details'])
-        return redirect(url_for('main.video'))
+        return redirect(url_for('main.video_details'))
     return render_template('main/details.html')
 
 
@@ -48,6 +48,14 @@ def video():
         # s3.Bucket('test-htp').upload_file
         return redirect(url_for('main.complete'))
     return render_template('main/video.html', heading="Submit video evidence")
+
+
+@bp.route('/video-details', methods=['GET', 'POST'])
+def video_details():
+    if request.method == 'POST':
+        session['further-details'] = request.form.getlist('more-detail')
+        return redirect(url_for('main.video'))
+    return render_template('main/video-details.html')
 
 
 @bp.route('/complete')

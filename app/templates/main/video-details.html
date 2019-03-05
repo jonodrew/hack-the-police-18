@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<h2 class="govuk-heading-l">Submitting video evidence to the police</h2>
+
+<form action="" method="post" enctype=multipart/form-data>
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="more-detail">
+        Further detail on the video evidence you're providing
+        </label>
+        <span id="more-detail-hint" class="govuk-hint">
+            Please give as much detail as you can. For example, is there a time difference on the CCTV between what happened
+            and the time on the recording? Is there a particular section that you think we should look at?
+        </span>
+        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+    </div>
+    <button type="submit" class="govuk-button">
+      Submit
+    </button>
+</form>
+
+{% endblock %}
